@@ -1,0 +1,46 @@
+.ourClients {
+  width: 100%;
+
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding-bottom: 50px;
+    color: #212121;
+  }
+
+  .items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .item {
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      width: 170px;
+      height: 92px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      fill: #afb1b8;
+      &:hover {
+        border: 1px solid $secColor;
+        border-radius: 4px;
+        width: 170px;
+        height: 92px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: $secColor;
+      }
+      &:not(:last-child) {
+        margin: 0 15px;
+      }
+    }
+  }
+}

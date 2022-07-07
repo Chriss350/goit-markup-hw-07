@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+.page-header {
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+}
+.page-header .nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header .nav .logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.page-header .nav .logo a {
+  color: #000;
+  text-decoration: none;
+}
+.page-header .nav a:hover,
+.page-header .nav a:focus {
+  color: #2196f3;
+}
+.page-header .nav .logo span {
+  color: #2196f3;
+}
+.page-header .nav .menu {
+  list-style-type: none;
+  margin: 0px;
+}
+.page-header .nav .menu li {
+  display: inline-block;
+}
+.page-header .nav .menu li:not(:last-child) {
+  margin-right: 23px;
+}
+.page-header .nav .menu a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--MainFontColor);
+}
+.page-header .nav .menu a:hover,
+.page-header .nav .menu a:focus {
+  color: var(--secColor);
+}
+.page-header .contact {
+  list-style: none;
+  padding-left: 364px;
+}
+.page-header .contact li {
+  display: inline-block;
+}
+.page-header .contact li:last-child {
+  padding-left: 50px;
+}
+.page-header .contact a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.page-header .contact a:hover,
+.page-header .contact a:focus {
+  color: #2196f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #2f303a;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.content .slider {
+  position: relative;
+  height: 600px;
+  z-index: 3;
+  background: url("../images/ImgsliderImg.jpg");
+}
+.content .slider:after {
+  content: "";
+  background: rgba(47, 48, 58, 0.4);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content .slider > * {
+  position: relative;
+  z-index: 10;
+}
+.content .slider .motto {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  width: 696px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+.content .slider button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  color: #fff;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+}
+.content .advantages {
+  width: 100%;
+  padding-top: 94px;
+}
+.content .advantages .items {
+  list-style: none;
+}
+.content .advantages .item {
+  display: inline-block;
+}
+.content .advantages .item:not(:last-child) {
+  margin-right: 30px;
+}
+.content .advantages .item .box {
+  width: 270px;
+}
+.content .advantages .item .iconBox {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .advantages .item .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #2f303a;
+}
+.content .advantages .item .desc {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.content .takeCare {
+  width: 100%;
+}
+.content .takeCare h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-bottom: 50px;
+  color: #212121;
+}
+.content .takeCare .items {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+.content .takeCare .items .item {
+  display: inline-block;
+  margin: 0 15px;
+}
+.content .team {
+  background-color: #f5f4fa;
+  width: 100%;
+}
+.content .team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-bottom: 50px;
+  color: #212121;
+}
+.content .team .items {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+.content .team .items .item {
+  display: inline-block;
+  margin: 0 15px;
+}
+.content .team .box {
+  width: 270px;
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.content .team .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.content .team .workplace {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.content .team .socialMedia {
+  padding-bottom: 30px;
+}
+.content .team .socialMedia .items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.content .team .socialMedia .items .item {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+.content .team .socialMedia .items .item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: #2196f3;
+  fill: #fff;
+}
+.content .team .socialMedia .items .icon {
+  width: 20px;
+  height: 20px;
+}
+.content .ourClients {
+  width: 100%;
+}
+.content .ourClients h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-bottom: 50px;
+  color: #212121;
+}
+.content .ourClients .items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .ourClients .items .item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+.content .ourClients .items .item:hover {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #2196f3;
+}
+.content .ourClients .items .item:not(:last-child) {
+  margin: 0 15px;
+}
+
+.footer {
+  background-color: #2f303a;
+  height: 252px;
+  margin: auto;
+}
+.footer .footerContent {
+  display: flex;
+  justify-content: start;
+  align-items: left;
+}
+.footer .logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.footer .logo a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .logo span {
+  color: #2196f3;
+}
+
+footer .logo footer address .items {
+  list-style: none;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+footer address .item:first-child {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--mottoColor);
+}
+
+footer address .item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
+}
+
+footer .socialMedia {
+  padding-top: 72px;
+  padding-left: 70px;
+}
+
+footer .socialMedia h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+footer .socialMedia .items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .socialMedia .item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .socialMedia .item:hover {
+  background: var(--secColor);
+}
+
+footer .socialMedia .item a {
+  text-decoration: none;
+}
+
+footer .socialMedia .icon {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}/*# sourceMappingURL=main.css.map */

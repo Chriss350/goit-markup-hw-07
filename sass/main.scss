@@ -1,0 +1,37 @@
+@import "utils/variables";
+@import "components/header";
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #2f303a;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.content {
+  @import "components/slider";
+  @import "components/advantages";
+  @import "components/takeCare";
+  @import "components/team";
+  @import "components/clients";
+}
+
+@import "components/footer";

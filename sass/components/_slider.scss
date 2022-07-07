@@ -1,0 +1,51 @@
+.slider {
+  position: relative;
+  height: 600px;
+  z-index: 3;
+  background: url("../images/ImgsliderImg.jpg");
+  &:after {
+    content: "";
+    background: rgba(47, 48, 58, 0.4);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  & > * {
+    position: relative;
+    z-index: 10;
+  }
+  .motto {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    width: 696px;
+    text-transform: uppercase;
+    color: $mottoColor;
+    text-align: center;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: 40px;
+  }
+  button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: $secColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    color: $mottoColor;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+  }
+}

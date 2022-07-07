@@ -1,0 +1,86 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+  // Navigation Logo && Menu
+  .nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      font-family: "Raleway", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+    }
+
+    .logo a {
+      color: $MainFontColor;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: $secColor;
+    }
+
+    .logo span {
+      color: $secColor;
+    }
+    .menu {
+      list-style-type: none;
+      margin: 0px;
+    }
+
+    .menu li {
+      display: inline-block;
+    }
+
+    .menu li:not(:last-child) {
+      margin-right: 23px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--MainFontColor);
+    }
+
+    .menu a:hover,
+    .menu a:focus {
+      color: var(--secColor);
+    }
+  }
+
+  // NavigationBarContact
+  .contact {
+    list-style: none;
+    padding-left: 364px;
+    li {
+      display: inline-block;
+    }
+
+    li:last-child {
+      padding-left: 50px;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: $contactColor;
+    }
+
+    a:hover,
+    a:focus {
+      color: $secColor;
+    }
+  }
+}
