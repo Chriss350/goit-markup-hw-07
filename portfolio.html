@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>WebStudio</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <section id="nav">
+        <div class="container">
+          <div class="nav">
+            <h2 class="logo">
+              <a href="index.html"><span>Web</span>Studio</a>
+            </h2>
+            <nav class="navMenu">
+              <ul class="menu">
+                <li><a href="index.html">Agencja</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </nav>
+            <ul class="contact">
+              <li>
+                <a href="mailto:info@devstudio.com">
+                  <svg width="16" height="12" viewbox="0 0 16 12">
+                    <use href="images/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <svg width="10" height="16" viewbox="0 0 10 16">
+                  <use href="images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
     <body>
-        <header>
-            <section id="nav">
-                <div class="container">
-                    <div class="nav">
-                        <h2 class="logo">
-                            <a href="index.html"><span>Web</span>Studio</a>
-                        </h2>
-                        <nav class="navMenu">
-                            <ul class="menu">
-                                <li><a href="index.html">Agencja</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="#">Kontakt</a></li>
-                            </ul>
-                        </nav>
-                        <ul class="contact">
-                            <li>
-                                <a href="mailto:info@devstudio.com">
-                                    <svg width="16" height="12" viewbox="0 0 16 12">
-                                        <use href="images/symbol-defs.svg#icon-mail"></use>
-                                    </svg>
-                                    info@devstudio.com
-                                </a>
-                            </li>
-                            <li>
-                                <svg width="10" height="16" viewbox="0 0 10 16">
-                                    <use href="images/symbol-defs.svg#icon-phone"></use>
-                                </svg>
-                                <a href="tel:+48111111111">+48 111 111 111</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </header>
+       
         <main class="content">
             <div class="portfolio section">
                 <div class="container">
@@ -177,54 +179,55 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="container footerContent">
-                <div class="contact">
-                    <h2 class="logo">
-                        <a href="index.html"><span>Web</span>Studio</a>
-                    </h2>
-                    <address>
-                        <ul class="items">
-                            <li class="item">m. Warszawa, Aleje Jerozolimskie 21</li>
-                            <li class="item">info@devstudio.com</li>
-                            <li class="item">+48 111 111 111</li>
-                        </ul>
-                    </address>
-                </div>
-                <div class="socialMedia">
-                    <h5>Dołącz do nas</h5>
-                    <ul class="items">
-                        <li class="item">
-                            <div class="icon">
-                                <svg width="20" height="20" viewBox="0 0 20 20">
-                                    <use href="images/symbol-defs.svg#icon-insta"></use>
-                                </svg>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="icon">
-                                <svg width="20" height="20" viewBox="0 0 20 20">
-                                    <use href="images/symbol-defs.svg#icon-twitter"></use>
-                                </svg>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="icon">
-                                <svg width="20" height="20" viewBox="0 0 20 20">
-                                    <use href="images/symbol-defs.svg#icon-fb"></use>
-                                </svg>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="icon">
-                                <svg width="20" height="20" viewBox="0 0 20 20">
-                                    <use href="images/symbol-defs.svg#icon-in"></use>
-                                </svg>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+              <div class="contact">
+                <h2 class="logo">
+                  <a href="index.html"><span>Web</span>Studio</a>
+                </h2>
+                <address class="address">
+                  <ul class="items">
+                    <li class="item">m. Warszawa, Aleje Jerozolimskie 21</li>
+                    <li class="item">info@devstudio.com</li>
+                    <li class="item">+48 111 111 111</li>
+                  </ul>
+                </address>
+              </div>
+              <div class="socialMedia">
+                <h5>Dołącz do nas</h5>
+                <ul class="items">
+                  <li class="item">
+                    <div class="icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use href="images/symbol-defs.svg#icon-insta"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use href="images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use href="images/symbol-defs.svg#icon-fb"></use>
+                      </svg>
+                    </div>
+                  </li>
+                  <li class="item">
+                    <div class="icon">
+                      <svg width="20" height="20" viewBox="0 0 20 20">
+                        <use href="images/symbol-defs.svg#icon-in"></use>
+                      </svg>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </footer>
-    </body>
-</html>
+          </footer>
+        </body>
+      </html>
+      

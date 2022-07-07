@@ -30,13 +30,8 @@
       fill: #afb1b8;
       &:hover {
         border: 1px solid $secColor;
-        border-radius: 4px;
-        width: 170px;
-        height: 92px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         fill: $secColor;
+        transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
       }
       &:not(:last-child) {
         margin: 0 15px;
